@@ -24,6 +24,8 @@
 			text-transform: uppercase;
 		}
 		</style>
+
+
 	</head>
 
 	<body>
@@ -57,7 +59,7 @@
 		<br/>
 
 		<div style="background:#665cbe; text-align:center; color:white">
-			<div class="container" >
+			<div class="container">
 				<div class="starter-template">
 					<a href="#"><img src="./images/g2.png" title="name" /></a>
 					<h1>Hi, 我是流星泪.</h1>
@@ -70,53 +72,30 @@
 		</div>
 
 
-
-
-
-
-		<div id="resume" style="padding-top: 3em;">
-			<h1>个人简历</h1>
-			<br>
-			<br>
+		<div id="resume" style="padding-top: 3em; text-align:center; background:#607B8B;">
+			<h1><b>个人简历</b></h1>
 		    <div>
-                <p>姓名：郑贵元</p>
-		    </div>
-		    <div>
-			    <img src="./images/resume.jpg"/>
+			    <img style="border:5px #FFFFFF solid;" src="./images/resume.jpg"  border="8"/>
 		    </div>
 			<br>
 			<br>
 			<br>
-
 		</div>
 
-		<div id="works" style="padding-top: 3em;">
+
+		<div id="works" style="padding-top: 3em; text-align:center; background:#22a19a;">
 			<h1>个人作品</h1>
-			<br>
-			<br>
-            &nbsp;&nbsp;绘画作品：
-			<br>
-<!--			
-            &nbsp;&nbsp;&nbsp;<a href="http://302694006.lofter.com/" target="_blank">乐乎个人主页链接</a>
--->
-            &nbsp;&nbsp;&nbsp;<a href="./work.html" target="_blank">个人作品</a>
 
+            <font size="5">绘画作品：</font>
+			<br>
+			<!--<a href="http://302694006.lofter.com/" target="_blank">乐乎个人主页链接</a>-->
+            <a href="./work.html" target="_blank">个人作品</a>
 			<br>
 			<br>
-            &nbsp;&nbsp;动画作品：
+			<font size="5">动画作品：</font>
 			<br>
-            &nbsp;&nbsp;&nbsp;<a href="http://v.youku.com/v_show/id_XMTYxMTUxNDQyNA==.html?from=s1.8-1-1.2" target="_blank">动画：梦回千屿</a>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			<!--http://v.youku.com/v_show/id_XMTYxMTUxNDQyNA==.html?from=s1.8-1-1.2-->
+            <a href="http://www.bilibili.com/video/av5341563/" target="_blank">动画：梦回千屿</a>
 			<br>
 			<br>
 			<br>
@@ -129,32 +108,37 @@
 		</div>
 
 
-        <div>
-            <h2>&nbsp;&nbsp;谢谢你的访问^_^</h2>
-			<br>
-        </div>
+		<div style="padding-top: 1em; text-align:center; background:#692c92;">
+	        <div>
+	            <font size="5" color="white">谢谢你的访问^_^</font>
+	        </div>
 
-
-        <div>
-			<img src="http://img01.taopic.com/140908/235110-140ZPG15845.jpg" width="308" height="400" />
-		</div>
-
-
-		<div>
-			<div>
-				<br/>
-				<br/>
-			<!--	<p>君だったら.mp3</p> -->
+	        <div>
+				<!--<img src="http://img01.taopic.com/140908/235110-140ZPG15845.jpg" width="308" height="400" />-->
+				<img style="border:5px #FFFFFF solid;" src="./images/cat.jpg" width="308" height="400" />
 			</div>
-			<audio controls="controls" autoplay="autoplay" loop="loop">
-			  <source src="http://sc1.111ttt.com/2014/1/12/01/5011853344.mp3" type="audio/mpeg">
-			  Your browser does not support the audio element.
-			</audio>
+
+			<div>
+				<div>
+				<!--	<p>君だったら.mp3</p> -->
+				</div>
+				<audio controls="controls" autoplay="autoplay" loop="loop" id="bg-music">
+					<!-- src="http://sc1.111ttt.com/2014/1/12/01/5011853344.mp3" -->
+				  	<source src="./audio/5011853344.mp3" type="audio/mpeg">
+				  	Your browser does not support the audio element.
+				</audio>
+				<script>
+					/*volume的取值范围在0-1之间*/
+					document.getElementById("bg-music").volume = 0.1;
+				</script>			
+			</div>
 		</div>
+
 
 		<div class="footer">
 				<p>Design by 流星泪, Product by won</p>
 		</div>
+
 
 		<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
  		<script src="js/jquery.min.js"></script>
